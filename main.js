@@ -193,7 +193,7 @@ document.addEventListener('DOMContentLoaded', async function () {
                 imagenElemento.src = libro.imagen;
                 imagenElemento.alt = libro.nombre;
                 imagenElemento.addEventListener('click', function () {
-                    window.location.href = `GenericoNovela.html?id=${libro.id}`;
+                    window.location.href = `genericoNovela.html?id=${libro.id}`;
                 });
     
                 const h3Elemento = document.createElement('h3');
@@ -210,7 +210,7 @@ document.addEventListener('DOMContentLoaded', async function () {
     
                 infoElemento.classList.add('info');
                 infoElemento.addEventListener('click', function () {
-                    window.location.href = `GenericoNovela.html?id=${libro.id}`;
+                    window.location.href = `genericoNovela.html?id=${libro.id}`;
                 });
     
                 infoElemento.appendChild(h3Elemento);
