@@ -4,19 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anonymous Library</title>
-    <link rel="icon" href="Image/PortadaPagina.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="image/PortadaPagina.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="styles/stylesGeneral.css">
 </head>
 <body>
     <header>
         <div class="header-buttons">
-            <button class="genre-button" id="btnInicio" >Inicio</button>
-            <button class="genre-button" id="btnNovela" >Novela Ligera</button>
+            <button class="genre-button" id="btnInicio">Inicio</button>
+            <button class="genre-button" id="btnNovela">Novela Ligera</button>
         </div>
     </header>
     <main>
         <section id="SeccionInicio" class="section-container">
-            <h2>Inicio</h2>
+            <div>
+                <h2>Inicio</h2>
+                <p>Bienvenido estudiantes de FIIS - UNI.</p>
+                <p> Explora nuestra colección de libros y disfruta de la lectura.</p>
+            </div>
+            <img src="image/Emblema.jpg" >
             <div class="book-shelf"></div>
         </section>
 
@@ -31,7 +36,6 @@
     <footer>
         <p>&nbsp;Derechos de autor © 2023 Anonymous Library. Todos los derechos reservados.</p>
     </footer>
-    <script type="module" src="./Data/dataInicio.js"></script>
     <script type="module" src="./Data/dataNovela.js"></script>
     <script type="module" src="./main.js"></script>
 </body>

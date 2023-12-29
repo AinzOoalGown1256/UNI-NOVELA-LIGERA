@@ -1,7 +1,5 @@
 import {librosNovela} from "./Data/dataNovela.js";
-import {librosInicio} from "./Data/dataInicio.js"
 console.log(librosNovela);
-console.log(librosInicio);
 
 document.addEventListener('DOMContentLoaded', async function () {
     const generos = ['Acción', 'Aventura', 'Fantasía', "Slice of Life", 'Drama', 'Comedia', 'Romance', 'Ficción', 'Misterio', 'Horror', 'Thriller', 'Magia', 'Deportes', 'Mecha',"Hentai"];
@@ -132,7 +130,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         // Ajustar el margen superior de todas las casillas de verificación
         const checkboxes = genresContainer.querySelectorAll('input[type="checkbox"]');
         checkboxes.forEach(function (checkbox) {
-            checkbox.style.marginTop = '15px';
+            checkbox.styleGeneral.marginTop = '15px';
         });
     
         generos.forEach(function (genero) {
@@ -166,20 +164,24 @@ document.addEventListener('DOMContentLoaded', async function () {
         // Agregar el contenedor al documento
         GeneralgenreForm.appendChild(genresContainer);
     }        
-    //Organiza los libros en los estantes.
-    function organizarLibrosEnEstante(libros,bookShelf) {
+    function organizarLibrosEnEstante(libros, bookShelf) {
         bookShelf.innerHTML = '';
-    
+     
         const columnasPorFila = 5;
-    
+
         // Ordena los libros según su posición original
-        libros.sort(() => Math.random() - 0.5); 
-        for (let i = 0; i < 15; i += columnasPorFila) {
+        libros.sort(() => Math.random() - 0.5);
+    
+        for (let i = 0; i < 2; i++) {   
             const filaElemento = document.createElement('div');
             filaElemento.classList.add('row');
     
-            for (let j = 0; j < columnasPorFila && (i + j) < libros.length; j++) {
-                const libro = libros[i + j];
+            for (let j = 0; j < columnasPorFila; j++) {
+                const libro = libros[i * columnasPorFila + j];
+    
+                if (!libro) {
+                    break; // Evita agregar elementos indefinidos al final
+                }
     
                 const libroElemento = document.createElement('div');
                 const infoElemento = document.createElement('div');
@@ -212,7 +214,6 @@ document.addEventListener('DOMContentLoaded', async function () {
                 });
     
                 infoElemento.appendChild(h3Elemento);
-                
                 infoElemento.appendChild(estadoElemento);
                 infoElemento.appendChild(tomosElemento);
     

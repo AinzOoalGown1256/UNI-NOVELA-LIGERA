@@ -97,7 +97,6 @@ export const librosNovela = [
         "estado": "En Emisión",
         "tomos": 5,
         "resumen": "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
-        "url": "pagina2.html"
     },
     {
         "id": "Novela12",
@@ -107,7 +106,6 @@ export const librosNovela = [
         "estado": "Culminado",
         "tomos": 10,
         "resumen": "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
-        "url": "pagina3.html"
     },
     {
         "id": "Novela13",
@@ -117,7 +115,6 @@ export const librosNovela = [
         "estado": "Culminado",
         "tomos": 10,
         "resumen": "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
-        "url": "pagina1.html"
     },
     {
         "id": "Novela14",
@@ -127,7 +124,6 @@ export const librosNovela = [
         "estado": "En Emisión",
         "tomos": 5,
         "resumen": "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
-        "url": "pagina2.html"
     },
     {
         "id": "Novela15",
@@ -137,6 +133,5 @@ export const librosNovela = [
         "estado": "Culminado",
         "tomos": 10,
         "resumen": "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
-        "url": "pagina3.html"
     }
 ];

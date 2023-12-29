@@ -1,0 +1,26 @@
+/* stylesNovela.css */
+
+body {
+    font-size: 18px; /* Tamaño de la fuente para todo el cuerpo */
+}
+
+.libro-container {
+    display: flex;
+    justify-content: space-around; /* Alinea los elementos en el contenedor */
+    margin: 20px;
+}
+
+.imagen-container img {
+    width: 600px; /* Establece el ancho deseado para las imágenes */
+    height: 800px; /* Establece la altura deseada para las imágenes */
+    object-fit: cover; /* Ajusta la imagen para cubrir completamente el contenedor */
+}
+
+.informacion-container {
+    max-width: 50%; /* Limita el ancho de la información a la mitad del contenedor principal */
+}
+
+/* Ajusta los estilos según tus necesidades */
+h2, p {
+    margin: 10px 0;
+}
