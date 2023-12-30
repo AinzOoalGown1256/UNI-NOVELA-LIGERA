@@ -38,7 +38,7 @@
             const idLibro = urlParams.get('id');
             const libro = buscarLibroPorId(idLibro);
             mostrarInformacionLibro(libro);
-            mostrarBotonesPDF(libro);
+            
         });
         function mostrarInformacionLibro(libro) {
             // Puedes personalizar cómo se muestra la información del libro
@@ -48,6 +48,7 @@
             document.getElementById('estadoLibro').textContent = `Estado: ${libro.estado}`;
             document.getElementById('tomosLibro').textContent = `Número de Tomos: ${libro.tomos}`;
             document.getElementById('resumenLibro').textContent = `Resumen: ${libro.resumen}`;
+            mostrarBotonesPDF(libro);
         }
         function mostrarBotonesPDF(libro) {
             const pdfButtonsContainer = document.getElementById('pdfButtons');
