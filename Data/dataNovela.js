@@ -4,22 +4,30 @@ export const librosNovela = [
         "generos": ["Misterio", "Terror", "Tragedia"],
         "imagen": "image/NovelaLigera/PortadaAnother.jpg",
         "nombre": "Another",
-        "estado": "...",
-        "tomos": 0,
+        "estado": "Culminado",
+        "tomos": "3/3",
         "resumen": "Koichi, un estudiante de 15 años, llega a una clase donde toda la clase ignora a Mei Misaki, y donde hace años decidieron ignorar la muerte de un alumno y actuar como si estuviera vivo. Koichi está dispuesto a investigar esta situación tan misteriosa, pero descubrir la verdad traerá nuevas muertes al instituto.",
         "Contenido": {
-            "llave1": "valor1",
-            "llave2": "valor2",
-          },
+            "TOMO 0": "https://drive.google.com/file/d/1enfHf8rKtruaOnllU_1hIn4_aq5j6qev/view?usp=drive_link",
+            "TOMO 1": "https://drive.google.com/file/d/1lQwAYltHeWrw2OZdPObLKmp5SfWTSq8P/view?usp=drive_link",
+            "TOMO 2": "https://drive.google.com/file/d/1RKVnMNxugPzKxGLh0bKpHfpFilU41kOy/view?usp=drive_link",
+        },
     },
     {
         "id": "Novela2",
         "generos": ["Drama", "Aventura", "Ficción", "Acción", "Romance"],
         "imagen": "image/NovelaLigera/PortadaAccelWorld.jpg",
         "nombre": "Accel World",
-        "estado": "...", 
-        "tomos": 0,
+        "estado": "Culminado", 
+        "tomos": "5/5",
         "resumen": "Año 2046, los Neuro-Linker permite a las personas tener sus cinco sentidos en un mundo virtual donde interactúan y se comunican a través de internet. Haruyuki, un estudiante normal y corriente de aspecto bajito y fuerte se sumerge en este mundo de realidad aumentada para evadirse de sus problemas.",
+        "Contenido": {
+            "TOMO 1": "https://download843.mediafire.com/n5qo6j8aipuglKDJFUfLhTLLv80TrBlLdzgcM79vZkaW1a2pkc4U3iqEkOYt7fy4mUoeXT9Bd7j1iACIJjdHRmHv7ZTXySfzgv4k9-Q1HnNitq0--JSbwj8NqqsrngU9-yquQWmcE5UKSoliCHHGRkftik4mKnmXCYVwa-kN7PTHnQ/kwx84d42ob4w7ip/Accel+World+volumen+01.pdf",
+            "TOMO 2": "https://www.flipsnack.com/FDE6B699E8C/accel-world-volumen-02/full-view.html",
+            "TOMO 3": "https://download1650.mediafire.com/zf3he1psx72gVW-tT2YwrlQlKYOKysw5FGg8xC28bQt-tnOKTPWJMeQJXdNb_y6XAfq6QZEYuqEPlUEU73hIgvO-B4U66h9nX-Ie-Rm9QY6IB_vVC6zNoKBeAsIb8MpGoxdR4Ri7AQNzUzasKIiphsV9Nv6Abfe2YilPpppvYGy8RA/a49r9xr66gcg024/Accel+World+volumen+03.pdf",
+            "TOMO 4": "https://www.flipsnack.com/FDE6B699E8C/accel-world-volumen-04/full-view.html",
+            "TOMO 5": "https://download1320.mediafire.com/moa4p3hd4idg6Wi51j260AeGoQagb2dmruzgo8KsgMmHQRckw4NSTJjMz753I4QrwWNgzT6SAQSc3qvcHohtiMxW_Rd-c4_3tR51iQSPLtW2aoaxhIscUWcWJ9NcLA766l1clmE0ze3eFiYHtLmRDhHumNnDX9qXcOx1L2MMzlZjeQ/niqlxiuf7ircrtp/Accel+World+volumen+05.pdf",
+          },
     },
     {
         "id": "Novela3",
@@ -29,6 +37,10 @@ export const librosNovela = [
         "estado": "...",
         "tomos": 0,
         "resumen": "En 2039, Shu Ouma es un estudiante socialmente incómodo que vive en Japón, donde se encuentra bajo el estricto control de la organización gubernamental llamada GHQ tras el brote del virus del Apocalipsis diez años antes.",
+        "Contenido": {
+            "llave1": "valor1",
+            "llave2": "valor2",
+          },
     },
     {
         "id": "Novela4",
@@ -38,6 +50,10 @@ export const librosNovela = [
         "estado": "...",
         "tomos": 0,
         "resumen": "Hyodo Issei es un estudiante de segundo año de la Academia Kuo, normal y corriente aunque perverso y lascivo. Lleva una vida tranquila hasta que una chica, Amano Yuma, le pide una cita. Claro que no se trata de algo normal: la chica es un ángel caído que buscaba asesinarlo.",
+        "Contenido": {
+            "llave1": "valor1",
+            "llave2": "valor2",
+          },
     },
     {
         "id": "Novela5",
@@ -46,7 +62,11 @@ export const librosNovela = [
         "nombre": "Date a Live",
         "estado": "...",
         "tomos": 0,
-        "resumen": "Shidou Itsuka es un estudiante de instituto que vive con su hermana pequeña Kotori, la misma que su vida se ve amenazada por otro terremoto espacial. Cuando va a salvarla, se encuentra con una chica misteriosa en su origen que se denomina como un Espíritu."
+        "resumen": "Shidou Itsuka es un estudiante de instituto que vive con su hermana pequeña Kotori, la misma que su vida se ve amenazada por otro terremoto espacial. Cuando va a salvarla, se encuentra con una chica misteriosa en su origen que se denomina como un Espíritu.",
+        "Contenido": {
+            "llave1": "valor1",
+            "llave2": "valor2",
+          },
     },
     {
         "id": "Novela6",
@@ -55,7 +75,11 @@ export const librosNovela = [
         "nombre": "OverLord",
         "estado": "...",
         "tomos": 0,
-        "resumen": "Cuando un popular MMORPG anuncia su cierre definitivo, el veterano jugador Momonoga decide quedarse en él hasta el mismo cierre, sin salir. El problema es que pasa la hora de cierre y él no se desconecta, pero los NPC han ganado conciencia propia. ¿Está atrapado?"
+        "resumen": "Cuando un popular MMORPG anuncia su cierre definitivo, el veterano jugador Momonoga decide quedarse en él hasta el mismo cierre, sin salir. El problema es que pasa la hora de cierre y él no se desconecta, pero los NPC han ganado conciencia propia. ¿Está atrapado?",
+        "Contenido": {
+            "llave1": "valor1",
+            "llave2": "valor2",
+          },
     },
     {
         "id": "Novela7",
@@ -64,7 +88,11 @@ export const librosNovela = [
         "nombre": "Konosuba",
         "estado": "...",
         "tomos": 0,
-        "resumen": "La serie sigue a Kazuma Satō, un joven otaku que es enviado a un mundo de fantasía con elementos similares a los videojuegos MMORPG después de su muerte (en un ridículo accidente), donde se forma un grupo disfuncional con una diosa, una archimaga y una paladín."
+        "resumen": "La serie sigue a Kazuma Satō, un joven otaku que es enviado a un mundo de fantasía con elementos similares a los videojuegos MMORPG después de su muerte (en un ridículo accidente), donde se forma un grupo disfuncional con una diosa, una archimaga y una paladín.",
+        "Contenido": {
+            "llave1": "valor1",
+            "llave2": "valor2",
+          },
     },
     {
         "id": "Novela8",
@@ -73,7 +101,11 @@ export const librosNovela = [
         "nombre": "Violet Evergarden",
         "estado": "...",
         "tomos": 0,
-        "resumen": "Violet Evergarden es una joven que abandona el campo de batalla para comenzar una nueva vida en el Servicio Postal CH. Allí, se siente conmovida por el trabajo de 'Auto Memories Dolls', que transmiten los pensamientos de las personas y las convierten en palabras."
+        "resumen": "Violet Evergarden es una joven que abandona el campo de batalla para comenzar una nueva vida en el Servicio Postal CH. Allí, se siente conmovida por el trabajo de 'Auto Memories Dolls', que transmiten los pensamientos de las personas y las convierten en palabras.",
+        "Contenido": {
+            "llave1": "valor1",
+            "llave2": "valor2",
+          },
     },
     {
         "id": "Novela9",
@@ -82,7 +114,11 @@ export const librosNovela = [
         "nombre": "Angel Beats",
         "estado": "...",
         "tomos": 0,
-        "resumen": "Angel Beats! transcurre en una escuela secundaria que hace de limbo para adolescentes que han muerto, pero que cuando estaban vivos experimentaron sufrimiento o traumas los cuales deben arreglarse antes que les sea dada una segunda oportunidad en la vida."
+        "resumen": "Angel Beats! transcurre en una escuela secundaria que hace de limbo para adolescentes que han muerto, pero que cuando estaban vivos experimentaron sufrimiento o traumas los cuales deben arreglarse antes que les sea dada una segunda oportunidad en la vida.",
+        "Contenido": {
+            "llave1": "valor1",
+            "llave2": "valor2",
+          },
     },
     {
         "id": "Novela10",
@@ -91,7 +127,11 @@ export const librosNovela = [
         "nombre": "No Game No Life",
         "estado": "...",
         "tomos": 0,
-        "resumen": "La historia se centra en la vida de Sora y Shiro, un hermano y una hermana cuya reputación como brillantes jugadores han dado lugar a leyendas urbanas en todo tipo a través de Internet. Estos dos jugadores aún consideran que el mundo real es como cualquier otro “juego de mierda”."
+        "resumen": "La historia se centra en la vida de Sora y Shiro, un hermano y una hermana cuya reputación como brillantes jugadores han dado lugar a leyendas urbanas en todo tipo a través de Internet. Estos dos jugadores aún consideran que el mundo real es como cualquier otro “juego de mierda”.",
+        "Contenido": {
+            "llave1": "valor1",
+            "llave2": "valor2",
+          },
     },
     {
         "id": "Novela11",
@@ -101,6 +141,10 @@ export const librosNovela = [
         "estado": "En Emisión",
         "tomos": 5,
         "resumen": "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+        "Contenido": {
+            "llave1": "valor1",
+            "llave2": "valor2",
+          },
     },
     {
         "id": "Novela12",
@@ -110,6 +154,10 @@ export const librosNovela = [
         "estado": "Culminado",
         "tomos": 10,
         "resumen": "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+        "Contenido": {
+            "llave1": "valor1",
+            "llave2": "valor2",
+          },
     },
     {
         "id": "Novela13",
@@ -119,6 +167,10 @@ export const librosNovela = [
         "estado": "Culminado",
         "tomos": 10,
         "resumen": "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+        "Contenido": {
+            "llave1": "valor1",
+            "llave2": "valor2",
+          },
     },
     {
         "id": "Novela14",
@@ -128,6 +180,10 @@ export const librosNovela = [
         "estado": "En Emisión",
         "tomos": 5,
         "resumen": "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+        "Contenido": {
+            "llave1": "valor1",
+            "llave2": "valor2",
+          },
     },
     {
         "id": "Novela15",
@@ -137,6 +193,10 @@ export const librosNovela = [
         "estado": "Culminado",
         "tomos": 10,
         "resumen": "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+        "Contenido": {
+            "llave1": "valor1",
+            "llave2": "valor2",
+          },
     },
     {
         "id": "Novela16",
@@ -146,6 +206,10 @@ export const librosNovela = [
         "estado": "Culminado",
         "tomos": 10,
         "resumen": "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+        "Contenido": {
+            "llave1": "valor1",
+            "llave2": "valor2",
+          },
     },
     {
         "id": "Novela17",
@@ -155,6 +219,10 @@ export const librosNovela = [
         "estado": "Culminado",
         "tomos": 10,
         "resumen": "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+        "Contenido": {
+            "llave1": "valor1",
+            "llave2": "valor2",
+          },
     },
     {
         "id": "Novela18",
@@ -164,6 +232,9 @@ export const librosNovela = [
         "estado": "Culminado",
         "tomos": 10,
         "resumen": "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+        "Contenido": {
+            "llave1": "valor1",
+            "llave2": "valor2",
+          },
     }
-
 ];

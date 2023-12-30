@@ -18,8 +18,11 @@
             <p id="estadoLibro"></p>
             <p id="tomosLibro"></p>
             <p id="resumenLibro"></p>
+            <div class="Contenedor Link">
+                <div class="contenido-container" id="contenidoLibro"></div>
+                <div id="pdfButtons" class="pdf-buttons-container"></div>
+            </div>
         </div>
-        <div class="contenido-container" id="contenidoLibro"></div>
     </div>
     <script type="module">
         import { librosNovela } from './Data/dataNovela.js';
@@ -35,9 +38,8 @@
             const idLibro = urlParams.get('id');
             const libro = buscarLibroPorId(idLibro);
             mostrarInformacionLibro(libro);
+            mostrarBotonesPDF(libro);
         });
-        
-        // Función para mostrar la información del libro en la página
         function mostrarInformacionLibro(libro) {
             // Puedes personalizar cómo se muestra la información del libro
             document.getElementById('nombreLibro').textContent = libro.nombre;
@@ -46,27 +48,21 @@
             document.getElementById('estadoLibro').textContent = `Estado: ${libro.estado}`;
             document.getElementById('tomosLibro').textContent = `Número de Tomos: ${libro.tomos}`;
             document.getElementById('resumenLibro').textContent = `Resumen: ${libro.resumen}`;
-            // Muestra el contenido en el nuevo contenedor
-            const contenidoContainer = document.getElementById('contenidoLibro');
-            contenidoContainer.innerHTML = '<h3>Contenido:</h3>';
+        }
+        function mostrarBotonesPDF(libro) {
+            const pdfButtonsContainer = document.getElementById('pdfButtons');
 
             // Itera sobre las claves y valores del contenido
             for (const [clave, valor] of Object.entries(libro.Contenido)) {
-                const botonElemento = document.createElement('button');
-                botonElemento.textContent = clave;
-                botonElemento.classList.add('boton-contenido');
-
-                // Agrega un manejador de eventos al botón para mostrar el PDF
-                botonElemento.addEventListener('click', function () {
-                    mostrarPDF(valor);
+                const boton = document.createElement('button');
+                boton.textContent = clave;
+                boton.addEventListener('click', function () {
+                    // Cambia la ubicación de la ventana actual al PDF
+                    window.location.href = valor;
                 });
-            contenidoContainer.appendChild(botonElemento);
+                pdfButtonsContainer.appendChild(boton);
             }
-        }
-        function mostrarPDF(pdfURL) {
-            // Puedes abrir el PDF en una nueva ventana o de la manera que prefieras
-            window.open(pdfURL, '_blank');
-        }
+    }
     </script>
 </body>
 </html>
