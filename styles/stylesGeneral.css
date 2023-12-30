@@ -1,7 +1,6 @@
     body {
         font-family: 'Arial', sans-serif;
-        background-image: url("image/fiis.jpg");
-        background-color: #f7f7f7;
+        background-image: url('/image/fiis.jpg');
         background-size: cover;
         background-position: center;
         margin: 0;
@@ -36,10 +35,12 @@
         padding: 20px;
     }
     #SeccionNovela{
+        
         display: flex;
         align-items: flex-start;
     }
 
+    
     /* Estilos para la sección de géneros */
     .genres {
         flex: 1;
@@ -76,7 +77,10 @@
     #SeccionInicio {
         margin: 0 auto; /* Alinear al centro horizontalmente */
         max-width: 600px; /* Establecer un ancho máximo si es necesario */
+        border-radius: 50%; /* Hace que los bordes sean circulares */
+        overflow: hidden; /* Asegura que el contenido no se desborde del borde circular */
     }
+      
     section {
         margin-bottom: 20px;
     }
@@ -103,17 +107,17 @@
     }
 
     .download-link {
-        width: 850px;
-        height: 350px;
-        border: 2px solid black;
-        flex: 0 0 calc(20% - 4px); /* Establece el ancho deseado para cada libro con 2px de espacio entre ellos */
+        width: 1000px;
+        height: 250px;
+        border: 5px solid black;
+        flex: 0 0 calc(14.28% - 2px); /* Establece el ancho deseado para cada libro con 2px de espacio entre ellos */
         position: relative;
         margin: 2px; /* Espacio entre los libros */
         box-sizing: border-box; /* Incluye el padding y el border en el ancho y alto del elemento */
     }
 
     .download-link img {
-        width: 100%; /* Cambia el valor según tus necesidades */
+        width: 150px; /* Cambia el valor según tus necesidades */
         height: 100%;
         object-fit: cover; /* Cubre el contenedor manteniendo la proporción de la imagen */
         border: 1px solid #ddd;
@@ -206,6 +210,7 @@
     }
 
     #SeccionInicio img {
-        max-width: 100%; /* Ajusta el ancho máximo de la imagen según sea necesario */
-        margin-left: 20px; /* Espaciado entre la imagen y el texto */
+        max-width: 200px; /* Ajusta el ancho máximo de la imagen según sea necesario */
+        border-radius: 50%; /* Borde completamente ovalado */
+        width: 100%; /* Para asegurar que la imagen se ajuste al contenedor */
     }

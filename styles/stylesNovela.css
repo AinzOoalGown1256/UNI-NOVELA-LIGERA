@@ -1,26 +1,53 @@
 /* stylesNovela.css */
 
 body {
-    font-size: 18px; /* Tamaño de la fuente para todo el cuerpo */
+    font-size: 18px;
+    background-color: black; /* Fondo negro */
+    color: white; /* Texto blanco */
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 .libro-container {
     display: flex;
-    justify-content: space-around; /* Alinea los elementos en el contenedor */
+    flex-direction: column; /* Cambia la dirección del contenedor a columna */
+    align-items: center; /* Centra los elementos en el contenedor */
     margin: 20px;
 }
 
 .imagen-container img {
-    width: 600px; /* Establece el ancho deseado para las imágenes */
-    height: 800px; /* Establece la altura deseada para las imágenes */
-    object-fit: cover; /* Ajusta la imagen para cubrir completamente el contenedor */
+    width: 300px; /* Ajusta el ancho deseado para las imágenes */
+    height: 400px; /* Ajusta la altura deseada para las imágenes */
+    object-fit: cover;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 10px; /* Agrega espacio entre la imagen y la información */
 }
 
 .informacion-container {
-    max-width: 50%; /* Limita el ancho de la información a la mitad del contenedor principal */
+    max-width: 50%;
 }
 
 /* Ajusta los estilos según tus necesidades */
 h2, p {
     margin: 10px 0;
+}
+
+.boton-contenido {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton-contenido:hover {
+    background-color: #2980b9;
 }

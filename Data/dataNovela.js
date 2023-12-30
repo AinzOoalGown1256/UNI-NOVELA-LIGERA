@@ -7,6 +7,10 @@ export const librosNovela = [
         "estado": "...",
         "tomos": 0,
         "resumen": "Koichi, un estudiante de 15 años, llega a una clase donde toda la clase ignora a Mei Misaki, y donde hace años decidieron ignorar la muerte de un alumno y actuar como si estuviera vivo. Koichi está dispuesto a investigar esta situación tan misteriosa, pero descubrir la verdad traerá nuevas muertes al instituto.",
+        "Contenido": {
+            "llave1": "valor1",
+            "llave2": "valor2",
+          },
     },
     {
         "id": "Novela2",
@@ -133,5 +137,33 @@ export const librosNovela = [
         "estado": "Culminado",
         "tomos": 10,
         "resumen": "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+    },
+    {
+        "id": "Novela16",
+        "generos": ["Ficción", "Acción"],
+        "imagen": "image/NovelaLigera/PortadaGuiltyCrown.jpg",
+        "nombre": "Nombre del Libro 3",
+        "estado": "Culminado",
+        "tomos": 10,
+        "resumen": "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+    },
+    {
+        "id": "Novela17",
+        "generos": ["Ficción", "Acción"],
+        "imagen": "image/NovelaLigera/PortadaGuiltyCrown.jpg",
+        "nombre": "Nombre del Libro 3",
+        "estado": "Culminado",
+        "tomos": 10,
+        "resumen": "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+    },
+    {
+        "id": "Novela18",
+        "generos": ["Ficción", "Acción"],
+        "imagen": "image/NovelaLigera/PortadaGuiltyCrown.jpg",
+        "nombre": "Nombre del Libro 3",
+        "estado": "Culminado",
+        "tomos": 10,
+        "resumen": "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
     }
+
 ];

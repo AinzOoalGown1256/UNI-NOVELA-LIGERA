@@ -18,8 +18,8 @@
             <p id="estadoLibro"></p>
             <p id="tomosLibro"></p>
             <p id="resumenLibro"></p>
-            <!-- Agrega más detalles según sea necesario -->
         </div>
+        <div class="contenido-container" id="contenidoLibro"></div>
     </div>
     <script type="module">
         import { librosNovela } from './Data/dataNovela.js';
@@ -46,7 +46,26 @@
             document.getElementById('estadoLibro').textContent = `Estado: ${libro.estado}`;
             document.getElementById('tomosLibro').textContent = `Número de Tomos: ${libro.tomos}`;
             document.getElementById('resumenLibro').textContent = `Resumen: ${libro.resumen}`;
-            // Agrega más detalles según sea necesario
+            // Muestra el contenido en el nuevo contenedor
+            const contenidoContainer = document.getElementById('contenidoLibro');
+            contenidoContainer.innerHTML = '<h3>Contenido:</h3>';
+
+            // Itera sobre las claves y valores del contenido
+            for (const [clave, valor] of Object.entries(libro.Contenido)) {
+                const botonElemento = document.createElement('button');
+                botonElemento.textContent = clave;
+                botonElemento.classList.add('boton-contenido');
+
+                // Agrega un manejador de eventos al botón para mostrar el PDF
+                botonElemento.addEventListener('click', function () {
+                    mostrarPDF(valor);
+                });
+            contenidoContainer.appendChild(botonElemento);
+            }
+        }
+        function mostrarPDF(pdfURL) {
+            // Puedes abrir el PDF en una nueva ventana o de la manera que prefieras
+            window.open(pdfURL, '_blank');
         }
     </script>
 </body>

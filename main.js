@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', async function () {
     
         const botonNinguno = document.createElement('button');
         botonNinguno.classList.add('ninguno-button');
-        botonNinguno.textContent = 'Ninguno';
+        botonNinguno.textContent = 'REINICIAR';
     
         // Agregar evento al hacer clic en "Ninguno"
         botonNinguno.addEventListener('click', function (e) {
@@ -166,18 +166,18 @@ document.addEventListener('DOMContentLoaded', async function () {
     }        
     function organizarLibrosEnEstante(libros, bookShelf) {
         bookShelf.innerHTML = '';
-     
-        const columnasPorFila = 5;
-
-        // Ordena los libros según su posición original
-        libros.sort(() => Math.random() - 0.5);
     
-        for (let i = 0; i < 2; i++) {   
+        const columnasPorFila = 6;
+        const filas = 3;
+        const librosAleatorios = libros.sort(() => Math.random() - 0.5);
+        const librosAMostrar = librosAleatorios.slice(0, filas * columnasPorFila);
+    
+        for (let i = 0; i < filas; i++) {
             const filaElemento = document.createElement('div');
             filaElemento.classList.add('row');
     
             for (let j = 0; j < columnasPorFila; j++) {
-                const libro = libros[i * columnasPorFila + j];
+                const libro = librosAMostrar[i * columnasPorFila + j];
     
                 if (!libro) {
                     break; // Evita agregar elementos indefinidos al final
@@ -224,5 +224,5 @@ document.addEventListener('DOMContentLoaded', async function () {
             }
             bookShelf.appendChild(filaElemento);
         }
-    }
+    }    
 });
